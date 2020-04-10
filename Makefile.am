@@ -102,6 +102,7 @@ EXTRA_DIST = \
 noinst_PROGRAMS = \
 	examples/active \
 	examples/basic \
+        examples/simple \
 	examples/bot \
 	examples/component \
 	examples/roster \
@@ -115,6 +116,9 @@ examples_active_LDADD = $(STROPHE_LIBS)
 examples_basic_SOURCES = examples/basic.c
 examples_basic_CFLAGS = $(STROPHE_FLAGS)
 examples_basic_LDADD = $(STROPHE_LIBS)
+examples_simple_SOURCES = examples/simple.c
+examples_simple_CFLAGS = $(STROPHE_FLAGS)
+examples_simple_LDADD = $(STROPHE_LIBS)
 examples_bot_SOURCES = examples/bot.c
 examples_bot_CFLAGS = $(STROPHE_FLAGS)
 examples_bot_LDADD = $(STROPHE_LIBS)
